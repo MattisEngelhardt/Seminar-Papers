@@ -1,56 +1,68 @@
-# 📚 Academic Seminar Papers Portfolio
+# 📚 Agentic Academic Workflows & Research Portfolio
 
-Welcome to my academic research repository. This repository serves as a centralized collection of my seminar papers, research designs, and academic projects completed during my studies at **HfWU Nürtingen-Geislingen**.
+A showcase of **sophisticated, constraint-driven AI Agent workflows** designed to produce high-fidelity academic research and automate complex document engineering.
 
-Each directory contains a self-contained academic project, including final outputs, automation scripts, literature mappings, and structured writing workflows.
-
----
-
-## 🚀 Featured Research Projects
-
-### 1. 🧠 [AI in Startup: Unit Economics & B2C E-Commerce](AI%20in%20startup/)
-*   **Module**: Methodische Grundlagen III (MG3)
-*   **Advisor**: Prof. Dr. Dirk Funck
-*   **Research Question**: *„Welche Rolle spielt KI in der Gründungsphase von B2C-E-Commerce-Startups zur Stärkung des Unit-Profitability-First-Gedankens?"*
-*   **Highlights**: 
-    *   **Rule-Based Agentic AI Workflow**: Utilizing a strict rules framework ([CLAUDE.md](AI%20in%20startup/CLAUDE.md)) to guide writing.
-    *   **Python OOXML Automation**: Direct XML patching scripts to insert text, build tables of contents, and manage complex Roman/Arabic page formatting.
-    *   **Detailed Literature Matrix**: 10 core scientific sources synthesized for maximum academic impact.
-*   **Explore Project**: 👉 [**Go to AI in Startup Workspace**](AI%20in%20startup/)
-
-### 2. 🛍️ [AI-Driven Customer Acquisition in E-Commerce: Opportunities & Risks](AI%20in%20E-Commerce/)
-*   **Module**: Methodische Grundlagen II (MG2)
-*   **Result**: **Grade 1.0** (WS 2025/26)
-*   **Research Question**: *What opportunities and risks does the use of AI in e-commerce offer for customer acquisition?*
-*   **Highlights**:
-    *   **Funnel-based targeting & personalization**: Maps AI techniques along the conversion funnel (awareness, targeting, personalization, conversion, and governance).
-    *   **Structured Prompt Chaining**: An 8-step prompt chaining pipeline (ChatGPT01–08) enforcing word counts, strict citation constraints, and self-checks.
-    *   **Original Paper & Prompts**: The full PDF includes the complete 12,000-word seminar paper and the detailed prompt documentation.
-*   **Explore Project**: 👉 [**Go to AI in E-Commerce Workspace**](AI%20in%20E-Commerce/)
+Rather than just containing academic papers, this repository demonstrates how to architect **deterministic, rule-governed pipelines** for LLM agents (like Claude and Antigravity) to manage literature analysis, write academic drafts under strict constraints, and perform low-level OOXML document automation.
 
 ---
 
-## 🛠️ Repository Structure
+## 🧠 Core Architecture: The `CLAUDE.md` Brain
+
+At the heart of the primary showcase (`AI in startup`) is [**`CLAUDE.md`**](AI%20in%20startup/CLAUDE.md) — the operational brain and context boundary of the AI Agent. 
+
+### Why `CLAUDE.md` is the Central Engine:
+*   **System Prompt Extension**: It serves as a local, persistent system prompt extension that any LLM agent automatically reads upon entering the directory.
+*   **Strict Boundary Constraints**: Enforces absolute negative constraints (e.g., prohibition of empirical data fabrication, restricted citation pools, preventing use of unverified internet text).
+*   **Source Fidelity Enforcement**: Defines precise rules for mapping arguments exclusively to raw markdown sources in `output_marker/` and `output_pymupdf/`.
+*   **Workflow Orchestration**: Directs the agent step-by-step through structural formulation, citation checks, and quality gates.
+
+---
+
+## 🚀 Showcased Workflows
+
+### 1. 🧠 [AI in Startup: Agentic Orchestration & OOXML Automation](AI%20in%20startup/)
+An end-to-end framework for writing a 10-page research exposé (Methodische Grundlagen III) following strict methodological guidelines (Döring).
+
+*   **Architecture & Workflow Highlights**:
+    *   **Context Control via [CLAUDE.md](AI%20in%20startup/CLAUDE.md)**: Standardized rules preventing hallucinations, enforcing formatting, and controlling the agent's logical flow.
+    *   **Copyright-Compliant Knowledge Skeletons**: To share the workflow publicly without distributing copyrighted papers, full-texts were moved to `literature_originals/` (git-ignored) and replaced with structured, standardized markdown metadata skeleton files in `output_marker/` and `output_pymupdf/`.
+    *   **OOXML Python Automation**: Custom Python scripts (`build_expose.py`, etc.) that perform direct ZIP/XML manipulations on `.docx` structures. This automates the dynamic building of Tables of Contents, inserts text programmatically, and patches Word XML to enforce complex dual page-numbering (Roman numerals for headers, Arabic for content).
+    *   **Chain-of-Thought Prompts**: Complete multi-step prompt pipelines (`prompts/`) designed to guide the model through individual chapter generation.
+*   **Explore Pipeline**: 👉 [**Go to AI in Startup Workspace**](AI%20in%20startup/)
+
+### 2. 🛍️ [AI-Driven E-Commerce Customer Acquisition](AI%20in%20E-Commerce/)
+A case study of a 1.0-graded seminar paper (Methodische Grundlagen II) built via a closed-loop prompt chaining pipeline.
+
+*   **Architecture & Workflow Highlights**:
+    *   **Funnel-Based Constraint Prompts**: A structured 8-step prompting pipeline enforcing hard word counts, precise source positioning, and verbatim citation injection.
+    *   **Closed-Loop QA Auditing**: Demonstrates a self-diagnostic audit prompt comparing the generated draft against target outlines and constraints, scoring compliance, and outputting an error report before final compilation.
+*   **Explore Pipeline**: 👉 [**Go to AI in E-Commerce Workspace**](AI%20in%20E-Commerce/)
+
+---
+
+## 🛠️ Repository Layout & Data Flow
+
+The repository structure reflects a separation of concerns between code automation, prompt sequences, source abstractions, and output formats:
 
 ```text
 Seminar-Papers/ (Root Portfolio)
-├── .gitignore          # Centralized repository-wide protection rules
-├── README.md           # This index portfolio page
-├── AI in startup/      # Project 1: AI & Unit Economics in E-Commerce Startups
-│   ├── paper/          # Final Exposé Word outputs
-│   ├── output_marker/  # Skeleton placeholder files for 10 papers & 4 frameworks
-│   ├── output_pymupdf/ # Skeleton placeholder file for the Döring textbook
-│   ├── prompts/        # Complete 8-step prompt chaining pipeline
-│   ├── scripts/        # Python OOXML builder and XML automation scripts
-│   ├── README.md       # Detailed technical project documentation
-│   └── CLAUDE.md       # Operational AI control document
-└── AI in E-Commerce/   # Project 2: AI & Customer Acquisition in E-Commerce
+├── .gitignore          # Repository-wide git-ignore and tracking exceptions
+├── README.md           # This architecture & portfolio showcase
+├── AI in startup/      # Project 1: AI Agent Writing & OOXML Automation
+│   ├── CLAUDE.md       # Operational AI Control Document (The Brain 🧠)
+│   ├── paper/          # Generated final documents & Exposé outputs
+│   ├── output_marker/  # Public metadata skeletons representing 10 research papers
+│   ├── output_pymupdf/ # Public metadata skeleton representing the core Döring methodology textbook
+│   ├── prompts/        # Context-bounded prompt templates for chapter generation
+│   ├── scripts/        # Python scripts manipulating docx OOXML / XML tree structures
+│   └── README.md       # Technical execution instructions for the scripts
+└── AI in E-Commerce/   # Project 2: Funnel Prompt Chaining Case Study
     ├── paper/          # Final 1.0-graded seminar paper (PDF)
-    └── README.md       # Workflow documentation & prompt engineering pipeline
+    └── README.md       # Documentation of the 8-step ChatGPT prompt chaining workflow
 ```
 
 ---
 
-## 👨‍💻 Author & Contact
+## 👨‍💻 Author & Concept
 *   **Author**: Mattis Engelhardt
 *   **Institution**: Hochschule für Wirtschaft und Umwelt Nürtingen-Geislingen (HfWU)
