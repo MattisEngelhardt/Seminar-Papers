@@ -28,6 +28,8 @@ Seminar-Papers/ (Root Portfolio)
 ├── README.md           # This index portfolio page
 └── AI in startup/      # Project 1: AI & Unit Economics in E-Commerce
     ├── paper/          # Final Exposé Word outputs
+    ├── output_marker/  # Skeleton placeholder files for 10 papers & 4 frameworks
+    ├── output_pymupdf/ # Skeleton placeholder file for the Döring textbook
     ├── prompts/        # Complete 8-step prompt chaining pipeline
     ├── scripts/        # Python OOXML builder and XML automation scripts
     ├── README.md       # Detailed technical project documentation

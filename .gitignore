@@ -12,8 +12,11 @@ __pycache__/
 .pytest_cache/
 
 # Converted literature outputs (contains copyrighted textbooks and articles)
-output_marker/
-output_pymupdf/
+AI in startup/output_marker/
+AI in startup/output_pymupdf/
+
+# Backups of the original full-text files
+literature_originals/
 
 # Unpacked intermediate docx build folders
 unpacked_expose/
