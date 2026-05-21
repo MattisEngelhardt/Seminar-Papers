@@ -32,6 +32,7 @@ funds_backup/
 
 # Exclude raw PDF books and articles to respect copyright and keep repository lightweight
 *.pdf
+!AI in E-Commerce/paper/*.pdf
 
 # Editor and agent files
 .vscode/
