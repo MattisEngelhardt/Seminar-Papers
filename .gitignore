@@ -1,0 +1,38 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python caches and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Converted literature outputs (contains copyrighted textbooks and articles)
+output_marker/
+output_pymupdf/
+
+# Unpacked intermediate docx build folders
+unpacked_expose/
+unpacked/
+expose_work/
+
+# Backups and temporary files
+funds_backup/
+*.log
+~$*.docx
+~$*.doc
+*.tmp
+
+# Exclude raw PDF books and articles to respect copyright and keep repository lightweight
+*.pdf
+
+# Editor and agent files
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
