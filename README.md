@@ -1,6 +1,6 @@
 # 📚 Agentic Academic Workflows & Research Portfolio
 
-A showcase of **sophisticated, constraint-driven AI Agent workflows** designed to produce high-fidelity academic research and automate complex document engineering.
+A showcase of **sophisticated AI workflows** designed to produce high-fidelity academic research and automate complex document engineering.
 
 Rather than just containing academic papers, this repository demonstrates how to architect **deterministic, rule-governed pipelines** for LLM agents (like Claude and Antigravity) to manage literature analysis, write academic drafts under strict constraints, and perform low-level OOXML document automation.
 
