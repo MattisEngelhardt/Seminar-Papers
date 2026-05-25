@@ -6,18 +6,6 @@ Rather than just containing academic papers, this repository demonstrates how to
 
 ---
 
-## 🧠 Core Architecture: The `CLAUDE.md` Brain
-
-At the heart of the primary showcase (`AI in startup`) is [**`CLAUDE.md`**](AI%20in%20startup/CLAUDE.md) — the operational brain and context boundary of the AI Agent. 
-
-### Why `CLAUDE.md` is the Central Engine:
-*   **System Prompt Extension**: It serves as a local, persistent system prompt extension that any LLM agent automatically reads upon entering the directory.
-*   **Strict Boundary Constraints**: Enforces absolute negative constraints (e.g., prohibition of empirical data fabrication, restricted citation pools, preventing use of unverified internet text).
-*   **Source Fidelity Enforcement**: Defines precise rules for mapping arguments exclusively to raw markdown sources in `output_marker/` and `output_pymupdf/`.
-*   **Workflow Orchestration**: Directs the agent step-by-step through structural formulation, citation checks, and quality gates.
-
----
-
 ## 🚀 Showcased Workflows
 
 ### 1. 🧠 [AI in Startup: Agentic Orchestration & OOXML Automation](AI%20in%20startup/)
